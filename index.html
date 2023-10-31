@@ -1,36 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link type="image/x-icon" href="assets/logos/favicon.png" rel="shortcut icon">
-  <link rel="stylesheet" href="css/style.css">
-<title>PhotoWebsite </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test2</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="wrapper">
-    <header class="header">
-      <div class="wrapper header__wrapper">
-        <img class="logo logo__wrapper" src="#" alt="logo">  
-          <ul class="navigation header__navigation">
-            <li class="navigataion__item"><a href="#" class="navigation__link">menu</a></li>
-            <li class="navigataion__item"><a href="#" class="navigation__link">about</a></li>
-            <li class="navigataion__item"><a href="#" class="navigation__link">kek</a></li>
-            <li class="navigataion__item"><a href="#" class="navigation__link">lol</a></li>
-            <li class="navigataion__item"><a href="#" class="navigation__link">fdgdfs</a></li>
-          </ul>
-      </div>
-    </header>
-    <main class="main">
-      <section class="projects">
-        <div class="buttons buttons__wrapper">
-          <div class="projects__button">Instant honey</div>
-          <div class="projects__button"> Dream dust</div>
-          <div class="projects__button">prarie songs</div>
+  <div class="container">
+    <div class="header">
+        <h1 class="header-title">Kirill Fokin</h1>
+        <!-- <img class="mail" src="/assets/email-square-line-icon.webp" alt="mail"> -->
+        <button class="header__burger-btn">
+            <span class="burger-elem"></span>
+            <span class="burger-elem"></span>
+            <span class="burger-elem"></span>
+        </button>
+      <div class="nav">
+        <div class="nav__item"><a href="" class="nav__link">HOME</a></div>
+        <div class="nav__item"><a href="" class="nav__link">+PHOTOGRAPHS</a>
+        <ul>
+            <li>Кронштадт</li>
+            <li>Калиниград</li>
+            <li>Лисий нос</li>
+        </ul>
         </div>
-        <img class=projects__image src="#" alt="beatiful image">
-      </section>
+        <div class="nav__item"><a href="" class="nav__link">ABOUT/CONTACT</a></div>
+        <div class="nav__item"><a href="" class="nav__link">LINKS</a></div>
+        
+      </div>
+    </div>
+    <main class="main">
+     <section class="places">
+      <div class="content">
+        <h2 class="title">Places</h2>
+        <div class="buttons">
+          <button class="buttons__button">Карелия</button>
+          <button class="buttons__button">Лисий нос</button>
+          <button class="buttons__button">Кронштадт</button>
+        </div>
+       </div>
+        <img class="places__image" src="/assets/1.jpg" alt="persons photo"> 
+     </section>
     </main>
   </div>
+  <script src="index.js"></script>
 </body>
 </html>

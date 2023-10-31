@@ -1,0 +1,69 @@
+main {
+
+    padding-bottom: 300px;
+    background-color: rgb(255, 255, 255);
+
+    .places {
+      display: flex;
+      justify-content: space-around;
+      
+    .content {
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        .buttons {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          row-gap: 20px;
+          padding: 10px;
+          width: 150px;
+          height: 250px;
+
+         
+          
+            .buttons__button {
+              width: 130px;
+              height: 60px;
+              background-color: #272727;
+              color: white;
+              font-family: futura-pt;
+              font-size: 17px;
+              font-weight: 700;   
+              border: 0;
+
+              &:nth-child(1) {
+                width: 120px;
+               height: 75px;
+             }
+
+             &:nth-child(2) {
+                width: 140px;
+                height: 75px;
+             }
+
+             &:nth-child(3) {
+                width: 150px;
+               height: 75px;;
+             }
+
+              &:hover {
+                color:  #fbafb0;
+                // width:140px;
+                // height: 50px;
+                border: 1px solid black;
+                background-color: white;
+                transition: 0.5s ease-in-out, width 0.5s , height 0.5s;
+
+              }
+            }
+        }
+    }
+
+    .places__image {
+        width: 400px;
+        margin-top: 40px;
+    }
+}
+}

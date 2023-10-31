@@ -1,0 +1,21 @@
+ body {
+  background-color: #fafafa;
+ }
+
+.container {
+  background-color: white;
+  margin: 0 auto;
+  max-width: $breakpoint_xl; 
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+
+}
+
+.title {
+  font-size: 50px;
+  color: #272727;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
