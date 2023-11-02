@@ -5,7 +5,8 @@ main {
 
     .places {
       display: flex;
-      justify-content: space-around;
+      justify-content:center;
+
       
     .content {
         margin-top: 80px;
@@ -24,7 +25,7 @@ main {
          
           
             .buttons__button {
-              width: 130px;
+              width: 160px;
               height: 60px;
               background-color: #272727;
               color: white;
@@ -34,24 +35,22 @@ main {
               border: 0;
 
               &:nth-child(1) {
-                width: 120px;
+                width: 160px;
                height: 75px;
              }
 
              &:nth-child(2) {
                 width: 140px;
-                height: 75px;
+                height: 65px;
              }
 
              &:nth-child(3) {
-                width: 150px;
+                width: 160px;
                height: 75px;;
              }
 
               &:hover {
                 color:  #fbafb0;
-                // width:140px;
-                // height: 50px;
                 border: 1px solid black;
                 background-color: white;
                 transition: 0.5s ease-in-out, width 0.5s , height 0.5s;
@@ -62,8 +61,25 @@ main {
     }
 
     .places__image {
-        width: 400px;
+        width: 300px;
         margin-top: 40px;
+        margin-left: 140px;
     }
 }
 }
+
+
+.footer {
+  background-color: rgb(255, 168, 196);
+  width: 1200px;
+  height: 40px;
+  flex: 0 0 auto;
+ -webkit-box-shadow: 0px 6px 19px 8px rgba(34, 60, 80, 0.2);
+ -moz-box-shadow: 0px 6px 19px 8px rgba(34, 60, 80, 0.2);
+ box-shadow: 0px 6px 19px 8px rgba(34, 60, 80, 0.2); 
+  
+}
+
+
+
+
