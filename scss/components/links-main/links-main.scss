@@ -1,0 +1,25 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .links {
+        &__titile {
+            margin-top: 200px;;
+            font-size: 40px;
+        }
+
+       ul {
+        margin-top: 100px;;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+       }
+
+        &__link {
+            font-size: 20px;
+            color: gray;
+            text-decoration: none;
+
+        }
+    }
+}
