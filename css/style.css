@@ -162,8 +162,8 @@ body {
 }
 .header .nav .mail {
   width: 40px;
-  -webkit-transition: background-color 0.5s, border-radius 0.5s;
-  transition: background-color 0.5s, border-radius 0.5s;
+  -webkit-transition: background-color 0.5w, border-radius 0.5s;
+  transition: background-color 0.5w, border-radius 0.5s;
 }
 .header .nav .mail:hover {
   background-color: #fac9ca;
@@ -451,4 +451,77 @@ main .places .places__image {
     -webkit-box-shadow: 0px 6px 19px 8px rgba(34, 60, 80, 0.2);
     box-shadow: 0px 6px 19px 8px rgba(34, 60, 80, 0.2);
   }
+}
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 99998;
+  background-color: rgba(115, 67, 106, 0.3);
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow-y: auto;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s, visibility 0.4s;
+  transition: opacity 0.4s, visibility 0.4s;
+}
+
+.modal__box {
+  position: relative;
+  max-width: 500px;
+  height: 500px;
+  padding: 45px;
+  z-index: 1;
+  margin: 30px 15px;
+  background-color: rgb(255, 168, 196);
+  -webkit-box-shadow: 0px 0px 17px -7px rgba(34, 60, 80, 0.2);
+          box-shadow: 0px 0px 17px -7px rgba(34, 60, 80, 0.2);
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+}
+
+.modal__close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border: none;
+  background-color: transparent;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.modal__close-btn svg path {
+  -webkit-transition: fill 0.4s;
+  transition: fill 0.4s;
+}
+
+.modal__close-btn:hover svg path {
+  fill: blue;
+}
+
+.modal__close-btn:active svg path {
+  fill: rgb(186, 53, 0);
+}
+
+.modal.open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal.open .modal__box {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
