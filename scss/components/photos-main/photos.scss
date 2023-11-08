@@ -1,0 +1,71 @@
+
+
+.main {
+
+}
+.photos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.photos__buttons {
+  display: flex;
+  margin-top: 20px;
+  column-gap: 20px;
+
+
+.photos__button {
+    width: 160px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #272727;
+    color: white;
+    font-family: futura-pt;
+    font-size: 17px;
+    font-weight: 700;   
+    border: 0;
+
+
+}
+
+}
+.photos-layot {
+    padding-top: 50px;
+    // border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    row-gap:  20px;;
+    column-gap: 180px;;
+}
+.photos-layout {
+
+		// .photos-layout__card
+
+		&__card {
+
+            
+		}
+}
+.photos-layout {
+
+		// .photos-layput__image
+
+		&__img {
+            width: 180px;
+            height: 250px;
+		}
+}
+
+
+.active {
+  background-color: rgb(255, 155, 198) !important;
+  color: black !important ;
+  border: 3px solid black !important;
+}
+
+
